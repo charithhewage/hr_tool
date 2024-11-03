@@ -33,24 +33,44 @@ Be sure to cover all possible scenarios, such as employees with no managers and 
 
 The solution is a Ruby application built as a console application. To solve the issue, I have used the Depth First Search (DFS) graph algorithm to traverse the hierarchy and display it in a structured format.
 
-## Installation
-
-To install the necessary dependencies, please run:
-
-```bash
-bundle install
-```
-
 ## Usage
-```bash
-bin/hr_tool.rb [File Path]
+
+This project is written in Ruby programing language. You can simply clone this project to your development computer and run with your own commands. I recommend, you should have installed Ruby 2.2.2 or higher version in your computer. If you have already installed Ruby in your computer, Use the following command to check the version.
+
+```
+$ ruby -v
 ```
 
-## Testing with RSpec
-```bash
-rspec
+If you don’t have installed Ruby in your computer, see [these instructions](https://www.ruby-lang.org/en/documentation/installation/) on ruby-lang.org
+
+### Clone the project
+```
+$ git clone git@github.com:charithhewage/hr_tool.git
+$ cd ~/hr_tool
 ```
 
+
+### Install gem dependencies
+```
+$ bundle install
+```
+
+### Run unit & integration tests
+```
+$ bundle exec rspec
+```
+
+### Run the application
+To run the application, use the following command:
+```
+$ ruby ./bin/hr_tool.rb
+```
+
+You can also run the application with sample data files:
+```
+$ ruby ./bin/hr_tool.rb ./data/employees.json
+```
+Please note that the input data must be in JSON format.
 
 ## Development
 
