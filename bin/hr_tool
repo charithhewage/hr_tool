@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require_relative '../lib/hr_tool/cli'
+
+# Default JSON file location can be changed via command line argument
+# bin/hr_tool [file path]
+
+file_path = ARGV[0] || "data/employees.json"
+HrTool::CLI.start(file_path)
